@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+
+:root {
+  /* ### Primary */
+
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* ### Neutral */
+
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+body {
+  max-width: 1440px;
+  margin: 100px 300px;
+}
+
+.father {
+  width: 900px;
+  height: 400px;
+}
+
+.akin {
+  background-color: var(--Bright-orange);
+  width: 300px;
+  height: 400px;
+  border-radius: 5px 0 0 5px;
+}
+
+.akin h1 {
+  color: var(--Very-light-gray-background-headings-buttons);
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+.akin p {
+  font-size: 15px;
+  color: var(--Transparent-white-paragraphs);
+  padding-right: 40px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.akin button {
+  color: var(--Bright-orange);
+}
+
+.henry {
+  background-color: var(--Dark-cyan);
+  width: 300px;
+  height: 400px;
+}
+
+.henry h1 {
+  color: var(--Very-light-gray-background-headings-buttons);
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+.henry p {
+  font-size: 15px;
+  color: var(--Transparent-white-paragraphs);
+  padding-right: 40px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.henry button {
+  color: var(--Dark-cyan);
+}
+
+.shola {
+  background-color: var(--Very-dark-cyan);
+  width: 300px;
+  height: 400px;
+  border-radius: 0 5px 5px 0;
+}
+
+.shola h1 {
+  color: var(--Very-light-gray-background-headings-buttons);
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+.shola p {
+  font-size: 15px;
+  color: var(--Transparent-white-paragraphs);
+  padding-right: 40px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.shola button {
+  color: var(--Very-dark-cyan);
+}
+
+h1 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+}
+
+/* ======================================================= */
+
+@media (max-width: 576px) {
+  .father {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body {
+    margin: 0 0;
+  }
+
+  .akin,
+  .henry,
+  .shola {
+    height: 400px;
+  }
+
+  .akin p {
+    padding-right: 15px;
+  }
+
+  .henry p {
+    padding-right: 20px;
+  }
+
+  .shola p {
+    padding-right: 20px;
+  }
+
+  .akin {
+    border-radius: 0;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .shola {
+    border-radius: 0;
+    border-radius: 0 0 5px 5px;
+  }
+}
